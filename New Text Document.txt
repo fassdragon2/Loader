@@ -1,0 +1,25 @@
+        private void btnDownload_Click(object sender, EventArgs e)
+        {
+            Process.Start(".\\Script Download.exe");
+        }
+
+        private void DownloadExecutor_Click(object sender, EventArgs e)
+        {
+            Process.Start("Executor Download.exe");
+
+            string path = "KrnlInstall.exe";
+            if (File.Exists(path))
+            {
+                Process.Start("KrnlInstall.exe");
+            }
+            else
+            {
+                
+            }
+
+        }
+
+        private void bttnRunKrnl_Click(object sender, EventArgs e)
+        {
+            Process.Start(".\\krnl\\krnlss.exe");
+        }
